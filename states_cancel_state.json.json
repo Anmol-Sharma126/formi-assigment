@@ -1,0 +1,18 @@
+{
+  "prompt_template": "I'd be happy to help you cancel your reservation. To proceed with the cancellation, I'll need your booking reference number.\n\n{booking_id_prompt}\n\nPlease note our cancellation policy: {cancellation_policy}",
+  "expected_inputs": [
+    "booking ID",
+    "confirmation of cancellation"
+  ],
+  "output_entities": [
+    "booking_id",
+    "cancellation_confirmed"
+  ],
+  "response_examples": [
+    "My booking ID is RES12345, please cancel it",
+    "Yes, I confirm I want to cancel",
+    "No, I changed my mind, don't cancel"
+  ],
+  "booking_id_prompt": "Please provide your booking ID, which would have been sent to you when you made the reservation.",
+  "cancellation_policy": "Cancellations should be made at least 2 hours before the reservation time to avoid any cancellation fee."
+}

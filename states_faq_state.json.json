@@ -1,0 +1,19 @@
+{
+  "prompt_template": "I'd be happy to answer any questions you have about our restaurant. What would you like to know?\n\n{faq_response}\n\nDo you have any other questions, or would you like to make a reservation?",
+  "expected_inputs": [
+    "specific question",
+    "reservation request",
+    "follow-up question"
+  ],
+  "output_entities": [
+    "question_type",
+    "request_type"
+  ],
+  "response_examples": [
+    "Do you have outdoor seating?",
+    "Is parking available?",
+    "I'd like to make a reservation",
+    "What's your cancellation policy?"
+  ],
+  "faq_response": ""
+}

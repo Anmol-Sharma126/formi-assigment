@@ -1,0 +1,22 @@
+{
+  "Delhi": {
+    "location": "Connaught Place, Delhi",
+    "timings": "12 PM - 11 PM",
+    "specials": "Lunch Buffet, Weekend Offers",
+    "contact": "+91-9876543210",
+    "faqs": {
+      "veg_options": "Yes, we have a wide variety of vegetarian dishes.",
+      "reservation_required": "Not mandatory, but recommended during weekends."
+    }
+  },
+  "Bangalore": {
+    "location": "Koramangala, Bangalore",
+    "timings": "12 PM - 10:30 PM",
+    "specials": "Live Grill, Happy Hour",
+    "contact": "+91-8765432109",
+    "faqs": {
+      "parking": "Yes, valet parking is available.",
+      "birthday_celebration": "Yes, we offer a special cake and decorations for birthdays."
+    }
+  }
+}

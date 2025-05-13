@@ -1,0 +1,44 @@
+{
+  "Delhi": {
+    "location": "Connaught Place, Delhi",
+    "timings": "12 PM - 11 PM",
+    "specials": "Lunch Buffet, Weekend Offers",
+    "contact": "+91-9876543210",
+    "faqs": {
+      "veg_options": "Yes, we have a wide variety of vegetarian dishes.",
+      "reservation_required": "Not mandatory, but recommended during weekends.",
+      "outdoor_seating": "Yes, we have a beautiful outdoor seating area.",
+      "dress_code": "Smart casual is recommended.",
+      "wifi": "Complimentary high-speed WiFi is available for all guests.",
+      "payment_methods": "We accept all major credit cards, UPI, and cash payments.",
+      "cancellation_policy": "Cancellations should be made at least 2 hours before the reservation time."
+    },
+    "menu_highlights": {
+      "appetizers": ["Delhi Special Chaat", "Paneer Tikka", "Tandoori Mushrooms"],
+      "main_course": ["Butter Chicken", "Dal Makhani", "Rogan Josh", "Biryani"],
+      "desserts": ["Gulab Jamun", "Rasmalai", "Kulfi"]
+    },
+    "average_cost": "₹1500 for two people (approx.)"
+  },
+  "Bangalore": {
+    "location": "Koramangala, Bangalore",
+    "timings": "12 PM - 10:30 PM",
+    "specials": "Live Grill, Happy Hour",
+    "contact": "+91-8765432109",
+    "faqs": {
+      "parking": "Yes, valet parking is available.",
+      "birthday_celebration": "Yes, we offer a special cake and decorations for birthdays.",
+      "pet_friendly": "Unfortunately, we do not allow pets except service animals.",
+      "reservation_required": "Highly recommended on weekends and holidays.",
+      "outdoor_seating": "Yes, we have a rooftop dining area.",
+      "wifi": "Free WiFi is available for customers.",
+      "large_groups": "We can accommodate groups of up to 20 people with advance notice."
+    },
+    "menu_highlights": {
+      "appetizers": ["Bangalore Bites Platter", "Masala Papad", "Grilled Corn"],
+      "main_course": ["Andhra Chicken Curry", "Chettinad Fish", "Mysore Masala Dosa", "Bisi Bele Bath"],
+      "desserts": ["Filter Coffee Mousse", "Mysore Pak", "Holige"]
+    },
+    "average_cost": "₹1200 for two people (approx.)"
+  }
+}

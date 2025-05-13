@@ -1,0 +1,17 @@
+{
+  "prompt_template": "Great! Let me confirm the details of your reservation:\n\n📅 Date: {date}\n🕒 Time: {time}\n👥 Party size: {party_size} people\n📍 Location: {location}\n👤 Name: {name}\n📞 Contact: {phone}\n\nIs this information correct? Please confirm by saying 'yes' or let me know what needs to be changed.",
+  "expected_inputs": [
+    "confirmation",
+    "correction request"
+  ],
+  "output_entities": [
+    "confirmation_status",
+    "correction_field"
+  ],
+  "response_examples": [
+    "Yes, that's correct",
+    "No, the time should be 8 PM",
+    "The party size is wrong, we'll be 5 people",
+    "Please change the date to Saturday"
+  ]
+}
