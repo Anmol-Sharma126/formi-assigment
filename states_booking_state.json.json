@@ -1,0 +1,26 @@
+{
+  "prompt_template": "I'd be happy to help you make a reservation! Please provide the following details:\n\n{missing_details}\n\nIf you've already provided some information, I'll just need the remaining details to complete your booking.",
+  "expected_inputs": [
+    "location preference",
+    "date",
+    "time",
+    "party size",
+    "name",
+    "contact information"
+  ],
+  "output_entities": [
+    "location",
+    "date",
+    "time",
+    "party_size",
+    "name",
+    "phone"
+  ],
+  "response_examples": [
+    "I'd like to book a table at your Delhi location for tomorrow at 7 PM for 4 people",
+    "I want to reserve for dinner in Bangalore",
+    "We'll be 6 people",
+    "My name is Rahul Singh and my number is 9876543210"
+  ],
+  "missing_details": "For your reservation, I'll need to know:\n{location_needed}- Which location (Delhi or Bangalore)\n{date_needed}- What date you'd like to book\n{time_needed}- What time you prefer\n{party_size_needed}- How many people will be dining\n{name_needed}- Your name\n{phone_needed}- Your contact number"
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Booking System Architecture</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .diagram {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0;
+        }
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Restaurant Booking System Architecture</h1>
+        <div class="diagram">
+            <svg width="750" height="500" viewBox="0 0 750 500" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background -->
+                <rect x="0" y="0" width="750" height="500" fill="#f0f0f0" rx="10" ry="10" />
+                
+                <!-- State Manager -->
+                <rect x="280" y="180" width="180" height="120" fill="#4a86e8" rx="10" ry="10" />
+                <text x="370" y="240" font-family="Arial" font-size="14" fill="white" text-anchor="middle">State Manager</text>
+                <text x="370" y="260" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Manages conversation flow</text>
+                
+                <!-- Knowledge Base -->
+                <rect x="520" y="180" width="150" height="120" fill="#6aa84f" rx="10" ry="10" />
+                <text x="595" y="240" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Knowledge Base</text>
+                <text x="595" y="260" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Restaurant information</text>
+                
+                <!-- Agent API -->
+                <rect x="280" y="50" width="180" height="80" fill="#3d85c6" rx="10" ry="10" />
+                <text x="370" y="90" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Agent API</text>
+                <text x="370" y="110" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Processes user input</text>
+                
+                <!-- Booking API -->
+                <rect x="70" y="180" width="150" height="120" fill="#9c27b0" rx="10" ry="10" />
+                <text x="145" y="240" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Booking API</text>
+                <text x="145" y="260" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Manages reservations</text>
+                
+                <!-- Webhook Service -->
+                <rect x="280" y="350" width="180" height="80" fill="#f1c232" rx="10" ry="10" />
+                <text x="370" y="390" font-family="Arial" font-size="14" fill="black" text-anchor="middle">Webhook Service</text>
+                <text x="370" y="410" font-family="Arial" font-size="12" fill="black" text-anchor="middle">Integrates with telephony</text>
+                
+                <!-- User -->
+                <circle cx="70" cy="70" r="50" fill="#ff6f00" />
+                <text x="70" y="75" font-family="Arial" font-size="14" fill="white" text-anchor="middle">User</text>
+                
+                <!-- Connector Lines -->
+                <!-- User to Agent -->
+                <line x1="110" y1="90" x2="280" y2="90" stroke="#666" stroke-width="2" stroke-dasharray="5,5" />
+                <polygon points="275,85 285,90 275,95" fill="#666" />
+                
+                <!-- Agent to State Manager -->
+                <line x1="370" y1="130" x2="370" y2="180" stroke="#666" stroke-width="2" />
+                <polygon points="365,175 370,185 375,175" fill="#666" />
+                
+                <!-- State Manager to Knowledge Base -->
+                <line x1="460" y1="240" x2="520" y2="240" stroke="#666" stroke-width="2" />
+                <polygon points="515,235 525,240 515,245" fill="#666" />
+                
+                <!-- State Manager to Booking API -->
+                <line x1="280" y1="240" x2="220" y2="240" stroke="#666" stroke-width="2" />
+                <polygon points="225,235 215,240 225,245" fill="#666" />
+                
+                <!-- State Manager to Webhook -->
+                <line x1="370" y1="300" x2="370" y2="350" stroke="#666" stroke-width="2" />
+                <polygon points="365,345 370,355 375,345" fill="#666" />
+
+                <!-- Labels for connections -->
+                <text x="195" y="80" font-family="Arial" font-size="10" fill="#333">User Input</text>
+                <text x="380" y="160" font-family="Arial" font-size="10" fill="#333">State Updates</text>
+                <text x="490" y="230" font-family="Arial" font-size="10" fill="#333">Queries</text>
+                <text x="240" y="230" font-family="Arial" font-size="10" fill="#333">Booking Operations</text>
+                <text x="380" y="330" font-family="Arial" font-size="10" fill="#333">Responses</text>
+
+                <!-- State Components -->
+                <rect x="545" y="300" width="100" height="25" fill="#e06666" rx="5" ry="5" />
+                <text x="595" y="317" font-family="Arial" font-size="10" fill="white" text-anchor="middle">State Prompts</text>
+                
+                <rect x="545" y="335" width="100" height="25" fill="#e06666" rx="5" ry="5" />
+                <text x="595" y="352" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Transitions</text>
+                
+                <rect x="545" y="370" width="100" height="25" fill="#e06666" rx="5" ry="5" />
+                <text x="595" y="387" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Entity Extraction</text>
+
+                <!-- Title at bottom -->
+                <text x="375" y="470" font-family="Arial" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">Restaurant Booking Voice Agent - System Architecture</text>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>

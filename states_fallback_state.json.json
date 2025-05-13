@@ -1,0 +1,19 @@
+{
+  "prompt_template": "I'm sorry, but I didn't quite understand what you're asking for. Could you please clarify?\n\nI can help you with:\n- Making a new reservation\n- Modifying an existing reservation\n- Canceling a reservation\n- Answering questions about our restaurants in Delhi and Bangalore\n\nPlease let me know how I can assist you today.",
+  "expected_inputs": [
+    "clarification",
+    "booking request",
+    "modification request",
+    "cancellation request",
+    "general inquiry"
+  ],
+  "output_entities": [
+    "request_type"
+  ],
+  "response_examples": [
+    "I want to book a table",
+    "I need information about your Delhi restaurant",
+    "I'd like to cancel my reservation",
+    "Do you have vegetarian options?"
+  ]
+}

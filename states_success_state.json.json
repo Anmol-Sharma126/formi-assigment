@@ -1,0 +1,20 @@
+{
+  "prompt_template": "Perfect! I've {action_type} your reservation for {date} at {time} for {party_size} people at our {location} restaurant.\n\nYour booking reference number is: {booking_id}\n\nA confirmation has been sent to your contact number {phone}.\n\n{additional_info}\n\nIs there anything else you'd like help with today?",
+  "expected_inputs": [
+    "acknowledgment",
+    "further request",
+    "thank you"
+  ],
+  "output_entities": [
+    "request_type"
+  ],
+  "response_examples": [
+    "Thank you!",
+    "Yes, I have another question",
+    "Can you tell me about the menu?",
+    "No thanks, that's all"
+  ],
+  "action_type": "",
+  "additional_info": "We look forward to seeing you! If you need to modify or cancel your reservation, please contact us with your booking reference number.",
+  "booking_id": ""
+}

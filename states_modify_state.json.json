@@ -1,0 +1,24 @@
+{
+  "prompt_template": "I'd be happy to help you modify your existing reservation. To get started, I'll need your booking reference number and what changes you'd like to make.\n\n{booking_id_prompt}\n\nWhat would you like to change about your reservation? (date, time, party size, etc.)",
+  "expected_inputs": [
+    "booking ID",
+    "modification details",
+    "new date",
+    "new time",
+    "new party size"
+  ],
+  "output_entities": [
+    "booking_id",
+    "modification_type",
+    "new_date",
+    "new_time",
+    "new_party_size"
+  ],
+  "response_examples": [
+    "My booking ID is RES12345 and I'd like to change the time to 8 PM",
+    "I need to add 2 more people to my reservation",
+    "Can I change my booking from dinner to lunch?",
+    "I want to move my reservation to next Saturday"
+  ],
+  "booking_id_prompt": "Please provide your booking ID, which would have been sent to you when you made the reservation."
+}

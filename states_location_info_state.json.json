@@ -1,0 +1,21 @@
+{
+  "prompt_template": "Let me provide you with information about our {location} restaurant:\n\n📍 Location: {location_address}\n🕒 Timings: {location_timings}\n☎️ Contact: {location_contact}\n✨ Specials: {location_specials}\n💰 Average cost: {average_cost}\n\nDo you have any specific questions about our {location} restaurant or would you like to make a reservation?",
+  "expected_inputs": [
+    "specific question",
+    "booking request",
+    "menu inquiry"
+  ],
+  "output_entities": [
+    "question_type",
+    "request_type"
+  ],
+  "response_examples": [
+    "Do you have outdoor seating?",
+    "What's on your menu?",
+    "Is parking available?",
+    "I'd like to make a reservation",
+    "What's your cancellation policy?"
+  ],
+  "location_specials": "Our restaurant offers special experiences including {specials}.",
+  "average_cost": "The average cost for dining at our restaurant is {average_cost}."
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_template": "I'd be happy to tell you about our menu at the {location} location!\n\n✨ Menu Highlights ✨\n\n🥗 Appetizers:\n{appetizers}\n\n🍲 Main Course:\n{main_course}\n\n🍨 Desserts:\n{desserts}\n\nWould you like to know about any specific dish or would you like to make a reservation?",
+  "expected_inputs": [
+    "specific dish inquiry",
+    "reservation request",
+    "other question"
+  ],
+  "output_entities": [
+    "dish_name",
+    "request_type"
+  ],
+  "response_examples": [
+    "Tell me more about the Butter Chicken",
+    "I'd like to make a reservation",
+    "What's your best dish?",
+    "Are these spicy?"
+  ],
+  "appetizers": "",
+  "main_course": "",
+  "desserts": ""
+}

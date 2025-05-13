@@ -1,0 +1,87 @@
+[
+  {
+    "current_state": "welcome_state",
+    "user_input_contains": ["book", "reserve", "table", "reservation"],
+    "next_state": "booking_state"
+  },
+  {
+    "current_state": "welcome_state",
+    "user_input_contains": ["change", "modify", "update", "reschedule"],
+    "next_state": "modify_state"
+  },
+  {
+    "current_state": "welcome_state",
+    "user_input_contains": ["cancel", "remove", "delete"],
+    "next_state": "cancel_state"
+  },
+  {
+    "current_state": "welcome_state",
+    "user_input_contains": ["delhi", "bangalore", "restaurant", "location"],
+    "next_state": "location_info_state"
+  },
+  {
+    "current_state": "welcome_state",
+    "user_input_contains": ["menu", "food", "dish", "cuisine", "eat"],
+    "next_state": "menu_state"
+  },
+  {
+    "current_state": "welcome_state",
+    "user_input_contains": ["question", "ask", "query", "help"],
+    "next_state": "faq_state"
+  },
+  {
+    "current_state": "booking_state",
+    "required_entities": ["location", "date", "time", "party_size", "name", "phone"],
+    "next_state": "confirm_state"
+  },
+  {
+    "current_state": "modify_state",
+    "required_entities": ["booking_id", "modification_type"],
+    "next_state": "confirm_state"
+  },
+  {
+    "current_state": "cancel_state",
+    "required_entities": ["booking_id", "cancellation_confirmed"],
+    "next_state": "success_state"
+  },
+  {
+    "current_state": "confirm_state",
+    "user_input_contains": ["yes", "correct", "right", "good", "confirm"],
+    "next_state": "success_state"
+  },
+  {
+    "current_state": "confirm_state",
+    "user_input_contains": ["no", "wrong", "incorrect", "change", "modify"],
+    "next_state": "booking_state"
+  },
+  {
+    "current_state": "location_info_state",
+    "user_input_contains": ["book", "reserve", "reservation", "table"],
+    "next_state": "booking_state"
+  },
+  {
+    "current_state": "location_info_state",
+    "user_input_contains": ["menu", "food", "dish", "eat"],
+    "next_state": "menu_state"
+  },
+  {
+    "current_state": "faq_state",
+    "user_input_contains": ["book", "reserve", "reservation", "table"],
+    "next_state": "booking_state"
+  },
+  {
+    "current_state": "menu_state",
+    "user_input_contains": ["book", "reserve", "reservation", "table"],
+    "next_state": "booking_state"
+  },
+  {
+    "current_state": "success_state",
+    "user_input_contains": ["thank", "bye", "goodbye", "that's all"],
+    "next_state": "welcome_state"
+  },
+  {
+    "current_state": "success_state",
+    "user_input_contains": ["another", "more", "question", "help"],
+    "next_state": "welcome_state"
+  }
+]

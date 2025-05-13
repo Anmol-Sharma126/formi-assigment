@@ -1,0 +1,18 @@
+{
+  "prompt_template": "Welcome to our restaurant reservation system! 👋\n\nI'm here to help you with:\n- Making a new reservation\n- Modifying an existing reservation\n- Canceling a reservation\n- Answering questions about our restaurants in Delhi and Bangalore\n\nHow can I assist you today?",
+  "expected_inputs": [
+    "booking request",
+    "modification request",
+    "cancellation request",
+    "general inquiry",
+    "faq"
+  ],
+  "output_entities": [],
+  "response_examples": [
+    "I'd like to book a table for dinner",
+    "I need to change my reservation",
+    "Cancel my booking please",
+    "Tell me about your Delhi restaurant",
+    "Do you have vegetarian options?"
+  ]
+}
